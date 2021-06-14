@@ -1,0 +1,13 @@
+archi:
+  id: PersonalizeCicdPocPipeline
+  pipeline:
+    repo:
+      type: CodeCommit
+      name: personalize-cicd-poc
+      create: true
+    build:
+      compute: Small
+    validate:
+      compute: Small
+      emails:
+      - techie@lynx.rocks
